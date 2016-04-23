@@ -7,7 +7,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", path: "puppet/scripts/install-modules.sh"
 
   config.vm.provision "puppet" do |p|
-	  p.manifests_path = "puppet/manifests"
-	  p.manifest_file = "development.pp"
+    p.manifests_path = "puppet/manifests"
+    p.manifest_file = "development.pp"
   end
 end
